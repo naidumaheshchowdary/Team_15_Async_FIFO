@@ -3,7 +3,7 @@ module Asynch_FIFO  #( parameter DSIZE = 8,parameter ADDRESS_BITS = 9 ) (rdata,w
   input  logic  winc, wclk, wrst,rinc, rclk, rrst;
   input   logic [DSIZE-1:0] wdata;
   output  logic [DSIZE-1:0] rdata;
-  output  logic wfull,rempty;
+  output  logic wfull,rempty; 
 
 
   wire [ADDRESS_BITS-1:0] waddr, raddr;

@@ -1,4 +1,4 @@
-module FIFO_memory #( parameter DSIZE = 8, parameter ADDRESS_BITS = 9) (winc, wfull, wclk,waddr, raddr,wdata,rdata);
+module FIFO_memory #( parameter DSIZE = 8, parameter ADDRESS_BITS = 9 ) (winc, wfull, wclk,waddr, raddr,wdata,rdata);
 
   input   winc, wfull, wclk;
   input   [ADDRESS_BITS-1:0] raddr,waddr ;
@@ -15,6 +15,6 @@ module FIFO_memory #( parameter DSIZE = 8, parameter ADDRESS_BITS = 9) (winc, wf
   always_ff @(posedge wclk)
   
     if (winc && !wfull)
-      mem[waddr] <= wdata;
+      mem[waddr] <= wdata;   
 
 endmodule

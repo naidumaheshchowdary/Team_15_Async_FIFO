@@ -1,5 +1,5 @@
 module sync_r_to_w #( parameter ADDRESS_BITS = 9 )(wclk, wrst, rptr,wq2_read_ptr);
-
+ 
   input   wclk, wrst;
   input   [ADDRESS_BITS:0] rptr;
   output logic  [ADDRESS_BITS:0] wq2_read_ptr;
