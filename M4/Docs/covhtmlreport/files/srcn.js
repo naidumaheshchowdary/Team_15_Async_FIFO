@@ -1,0 +1,2 @@
+var g_data = ["","top.sv","data_fields.sv","interface.sv","Fifo_top.sv","sync_rtow_wtor.sv","Async_fifo_memory.sv","rempty.sv","Wfull.sv","packet.sv","generator.sv","driver.sv","monitor.sv","scoreboard.sv","environment.sv","test.sv"];
+processSrcNamesData(g_data);

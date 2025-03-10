@@ -1,0 +1,2 @@
+var g_data = {"13":[12,"sync_r_to_w",1],"14":[12,"sync_w_to_r",1],"15":[12,"MEM",1],"16":[12,"Read_emp_ptr",1],"17":[12,"wfull_ptr",1],"12":[10,"DUT",1],"10":[-1,"tb_top",1]};
+processInstLinks(g_data);

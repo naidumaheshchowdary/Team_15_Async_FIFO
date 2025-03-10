@@ -1,0 +1,2 @@
+var g_data = {"4":["work.Asynch_FIFO",91.46,1],"7":["work.memory_element",86.25,1],"8":["work.read_empty",96.73,1],"5":["work.sync_r_to_w",94.79,1],"6":["work.sync_w_to_r",97.91,1],"2":["work.tb_top",70.65,1],"9":["work.write_full",72.69,1]};
+processDuLinks(g_data);
