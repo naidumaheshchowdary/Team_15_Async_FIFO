@@ -1,25 +1,20 @@
+module FIFO_memory #( parameter DSIZE = 8, parameter ADDRESS_BITS = 9 ) (winc, wfull, wclk,waddr, raddr,wdata,rdata);
 
-module memory_element #( parameter DSIZE = 8, parameter ADDRESS_SIZE = 4) 
-(
-  input   winc, wfull, wclk,
-  input   [ADDRESS_SIZE-1:0] raddr,waddr,
-  input   [DSIZE-1:0] wdata,
-  output  logic [DSIZE-1:0] rdata
-);
+  input   winc, wfull, wclk;
+  input   [ADDRESS_BITS-1:0] raddr,waddr ;
+  input   [DSIZE-1:0] wdata;
+  output  logic [DSIZE-1:0] rdata;
 
 
-  localparam DEPTH = 2**ADDRESS_SIZE;
+  localparam DEPTH = 1 <<  ADDRESS_BITS;
 
-  logic [DSIZE-1:0] memory [0: DEPTH-1];
+  logic [DSIZE-1:0] mem [0:DEPTH-1];
 
-  assign rdata = memory[raddr];
+  assign rdata = mem[raddr];
 
   always_ff @(posedge wclk)
   
     if (winc && !wfull)
-      memory[waddr] <= wdata;
+      mem[waddr] <= wdata;   
 
 endmodule
-
-
-
