@@ -1,0 +1,6 @@
+*.sv linguist-language=SystemVerilog
+*.v linguist-language=SystemVerilog
+*.js linguist-detectable=false
+*.html linguist-detectable=false
+docs/* linguist-detectable=false
+scripts/* linguist-detectable=false
