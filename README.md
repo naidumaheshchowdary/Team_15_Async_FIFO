@@ -1,2 +1,1 @@
-# ECE593
-asynchronous-fifo design and verification
+Design and Verification of Asynchronous FIFO
